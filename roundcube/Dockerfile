@@ -12,8 +12,9 @@ RUN apt-get -y update &&\
     sh -c 'echo "deb https://packages.sury.org/php/ stretch main" > /etc/apt/sources.list.d/php.list' &&\
     apt-get -y update &&\
     apt-get install -y --no-install-recommends \
-    php7.1-fpm php7.1-mcrypt php7.1-intl php7.1-sqlite3 \
+    php7.1-fpm php7.1-mcrypt php7.1-intl php7.1-sqlite3 php7.1-xml \
     php-pear php-net-smtp php-mail-mime
+
 
 WORKDIR /root
 ARG RC_VER=1.3.1
