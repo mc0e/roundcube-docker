@@ -13,7 +13,7 @@ RUN apt-get -y update &&\
     apt-get -y update &&\
     apt-get install -y --no-install-recommends \
     php7.1-fpm php7.1-mcrypt php7.1-intl php7.1-sqlite3 php7.1-xml \
-    php-pear php-net-smtp php-mail-mime
+    php7.1-mbstring php-pear php-net-smtp php-mail-mime
 
 
 WORKDIR /root
